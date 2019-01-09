@@ -45,7 +45,7 @@ class Weather extends React.Component {
         console.log(this.state.weather)
          weather = <View style={styles.container}>
              <Text h1>{this.state.weather.name}</Text>
-             <Image style={styles.imageStyle} source={{ uri: `http://openweathermap.org/img/w/${this.state.weather.weather[0].icon}.png` }} />
+                <Image style={styles.imageStyle} source={{ uri: `http://openweathermap.org/img/w/${this.state.weather.weather[0].icon}.png` }} />
              <Text h3>
                Current: {Math.round(this.state.weather.main.temp)}˚
              </Text>
@@ -64,7 +64,7 @@ class Weather extends React.Component {
     return (
      <View style = {styles.container} >
       <ImageBackground style={styles.background} source={require('./assets/FuSf4JD.jpg')}>
-        {weather}
+          {weather}
       </ImageBackground>
       </View>
     );
@@ -136,7 +136,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    textAlign: "center"
+    textAlign: "center",
+    marginTop: 30
   },
   wrapStyle: {
     flexWrap: "wrap",
